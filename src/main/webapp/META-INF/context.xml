@@ -1,0 +1,17 @@
+<Context>
+    <Resource
+            name="jdbc/MovieDB"
+            auth="Container"
+            type="javax.sql.DataSource"
+            factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+            driverClassName="com.mysql.cj.jdbc.Driver"
+            url="jdbc:mysql://localhost:3307/movie_system?useSSL=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=UTC"
+            username="root"
+            password="Sethmin@123"
+            maxTotal="50"
+            maxIdle="10"
+            minIdle="2"
+            maxWaitMillis="10000"
+            testOnBorrow="true"
+            validationQuery="SELECT 1" />
+</Context>
